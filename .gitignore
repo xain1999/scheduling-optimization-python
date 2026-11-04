@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.hypothesis/
+.pytest_cache/
+
+# generated output (rebuild with `python run.py figures`)
+figures/*.pdf
+figures/*.png
+tables/*.tex
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# outputs of example scripts
+results/*.html

@@ -1,0 +1,13 @@
+# core (Chapters 1-16)
+ortools==9.15.6755
+pulp==4.1.0
+highspy==1.14.0
+matplotlib==3.11.2
+numpy==2.5.3
+pyomo==6.10.1
+# deployment (Chapter 17)
+fastapi==0.156.8
+httpx==0.28.1
+hypothesis==6.170.5
+plotly==7.1.0
+uvicorn==0.54.0
