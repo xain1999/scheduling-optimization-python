@@ -16,11 +16,16 @@ You need **Python 3.12 or newer**.
 
 Get the code in one of two ways:
 
-- **With git:** copy the address shown under the green **Code** button
-  on this page, then run `git clone <that address>`.
-- **Without git:** choose **Code → Download ZIP** and unzip it. The
-  release `v1.0` (under **Releases**) is the exact code printed in the
-  first edition of the book.
+- **With git:**
+
+  ```bash
+  git clone https://github.com/xain1999/scheduling-optimization-python
+  ```
+
+- **Without git:** choose **Code → Download ZIP** and unzip it.
+
+The tag `v1.0` marks the exact code printed in the first edition of the
+book.
 
 Then create a virtual environment inside the `code` folder:
 
