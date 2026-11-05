@@ -2,7 +2,7 @@
 
 Tested code for the book **Scheduling Optimization with Python: From
 Dispatching Rules to Constraint Programming, Mathematical Optimization,
-and Metaheuristics** by Mohammed Hadjoudj (First Edition, 2026).
+and Metaheuristics** by Mohammed Islam Hadjoudj (First Edition, 2026).
 
 Every listing printed in the book is taken from these files, between
 markers of the form `# [start:name]` and `# [end:name]`. A listing's
