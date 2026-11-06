@@ -1,4 +1,4 @@
-"""Chapter 2 -- head-to-head comparison of the three models.
+"""Chapter 2: head-to-head comparison of the three models.
 
 Writes results/ch02_compare.csv and the LaTeX table used in the book.
 All solvers run single-threaded so the comparison is fair.

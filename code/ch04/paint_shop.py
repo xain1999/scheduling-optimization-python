@@ -1,4 +1,4 @@
-"""Chapter 4 -- case study: a paint line with colour changeovers.
+"""Chapter 4: case study: a paint line with colour changeovers.
 
 Single machine, sequence-dependent changeover times, modelled with
 AddCircuit.  Objectives: total weighted tardiness, then changeovers.
@@ -22,7 +22,7 @@ COLOURS = ["white", "yellow", "orange", "red", "blue", "black"]
 def changeover(a: int, b: int) -> int:
     """Time to switch from colour a to colour b (indices, light->dark).
 
-    Going darker needs a quick flush; going lighter needs a full clean.
+    Going darker needs a quick flush, going lighter a full clean.
     """
     if a == b:
         return 0
@@ -69,7 +69,7 @@ def build(jobs, start_colour=0):
            for i in range(n)]
     m.add_no_overlap(ivs)                 # redundant, but helps search
 
-    # Node 0 is a dummy "start/end of day"; job i is node i + 1.
+    # Node 0 is a dummy "start/end of day", job i is node i + 1.
     arcs, setup_terms = [], []
     for i in range(n):
         first = m.new_bool_var(f"first{i}")
@@ -112,7 +112,7 @@ def solve_lexicographic(jobs, time_limit=30, workers=8):
 
     for v in start:                             # keep the solution
         m.add_hint(v, solver.value(v))          # as a starting point
-    m.add(tardiness <= best_tardiness)          # don't get worse...
+    m.add(tardiness <= best_tardiness)          # don't get worse
     m.minimize(setups)                          # ...then 2nd priority
     status = check_cpsat(solver, solver.solve(m))
 
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     print("CP-SAT lexicogr. : tardiness %4d, changeovers %3d"
           % evaluate(jobs, order))
     print(f"  tardiness: {info['phase1']}, lower bound "
-          f"{info['bound1']:.0f}; changeovers: {info['phase2']}; "
+          f"{info['bound1']:.0f}, changeovers: {info['phase2']}, "
           f"{time.perf_counter() - t0:.0f} s")
     seq = [f"{n}:{COLOURS[jobs[int(n[1:]) - 1]['colour']][:3]}"
            for n in order]

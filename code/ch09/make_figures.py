@@ -1,4 +1,4 @@
-"""Chapter 9 -- renovation schedule with crew profiles."""
+"""Chapter 9: renovation schedule with crew profiles."""
 import sys
 from pathlib import Path
 

@@ -1,4 +1,4 @@
-"""Chapter 12 -- field service: technicians, time windows, and travel."""
+"""Chapter 12: field service: technicians, time windows, and travel."""
 import math
 import random
 import sys

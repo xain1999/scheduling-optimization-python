@@ -1,4 +1,4 @@
-"""Chapter 3 -- figures."""
+"""Chapter 3: figures."""
 import sys
 from pathlib import Path
 
@@ -35,7 +35,8 @@ def lp_geometry():
     ax.text(41, 3, "cutter", fontsize=8)
     ax.text(48, 7.5, "press", fontsize=8)
     ax.text(45, 31, "demand", fontsize=8)
-    ax.set_xlim(0, 60); ax.set_ylim(0, 45)
+    ax.set_xlim(0, 60)
+    ax.set_ylim(0, 45)
     ax.set_xlabel("brochure batches $a$")
     ax.set_ylabel("catalogue batches $b$")
     ax.spines[["top", "right"]].set_visible(False)
@@ -69,7 +70,8 @@ def lot_sizing_plan():
         bottom += hours
     ax.plot(T, [data.capacity[t] for t in T], color="black", lw=0.9,
             drawstyle="steps-mid", label="capacity")
-    ax.set_xlabel("week"); ax.set_ylabel("press hours")
+    ax.set_xlabel("week")
+    ax.set_ylabel("press hours")
     ax.set_xticks(T)
     ax.set_ylim(0, 1.6 * max(data.capacity.values()))
     ax.legend(ncol=4, fontsize=8, frameon=False, loc="upper center")

@@ -1,4 +1,4 @@
-"""Chapter 3 -- branch and bound from scratch on an order-selection problem.
+"""Chapter 3: branch and bound from scratch on an order-selection problem.
 
 Which orders should the shop accept for Saturday's 8-hour shift to
 maximise revenue?  (A 0/1 knapsack problem, small enough to watch.)

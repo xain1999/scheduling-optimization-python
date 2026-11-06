@@ -1,4 +1,4 @@
-"""Chapter 7 -- CP-SAT models for the flow shop."""
+"""Chapter 7: CP-SAT models for the flow shop."""
 import sys
 import time
 from pathlib import Path

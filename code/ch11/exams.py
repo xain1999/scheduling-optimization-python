@@ -1,4 +1,4 @@
-"""Chapter 11 -- exam timetabling as graph colouring."""
+"""Chapter 11: exam timetabling as graph colouring."""
 import random
 from itertools import combinations
 

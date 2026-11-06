@@ -1,4 +1,4 @@
-"""Chapter 13 -- serial vs parallel SGS, rules, sampling, CP-SAT."""
+"""Chapter 13: serial vs parallel SGS, rules, sampling, CP-SAT."""
 import csv
 import sys
 from pathlib import Path
@@ -24,4 +24,5 @@ for seed in range(1, 11):
     print(row, flush=True)
 with open(ROOT / "results" / "ch13_sgs.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=rows[0].keys())
-    w.writeheader(); w.writerows(rows)
+    w.writeheader()
+    w.writerows(rows)

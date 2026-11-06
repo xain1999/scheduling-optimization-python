@@ -1,4 +1,4 @@
-"""Chapter 8 -- figure: an optimal ft06 schedule with its critical path."""
+"""Chapter 8: figure: an optimal ft06 schedule with its critical path."""
 import sys
 from pathlib import Path
 

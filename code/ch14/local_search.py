@@ -1,4 +1,4 @@
-"""Chapter 14 -- local search, simulated annealing and tabu search for
+"""Chapter 14: local search, simulated annealing and tabu search for
 single-machine total weighted tardiness."""
 import math
 import random
@@ -7,7 +7,7 @@ import time
 
 # [start:cost]
 def total_wt(jobs, order):
-    """jobs[i] = (p, d, w); order = list of job indices."""
+    """jobs[i] = (p, d, w), and order = list of job indices."""
     t = cost = 0
     for i in order:
         p, d, w = jobs[i]
@@ -47,7 +47,7 @@ def descent(jobs, order, neighbourhood="insert"):
 # [start:annealing]
 def simulated_annealing(jobs, order, seconds=5, t0=None, alpha=0.9995,
                         seed=0):
-    """Accept a worse neighbour with probability exp(-delta / T); the
+    """Accept a worse neighbour with probability exp(-delta / T).  The
     temperature T decreases geometrically.  Random insertion moves."""
     rng = random.Random(seed)
     cur, cur_cost = list(order), total_wt(jobs, order)

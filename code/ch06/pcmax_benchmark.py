@@ -1,4 +1,4 @@
-"""Chapter 6 -- LPT versus exact models on random P || Cmax instances."""
+"""Chapter 6: LPT versus exact models on random P || Cmax instances."""
 import random
 
 from lpt import lower_bound, lpt

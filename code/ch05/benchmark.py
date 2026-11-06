@@ -1,4 +1,4 @@
-"""Chapter 5 -- rules, CP-SAT, MILP and DP on 1 || sum w_j T_j."""
+"""Chapter 5: rules, CP-SAT, MILP and DP on 1 || sum w_j T_j."""
 import csv
 import sys
 import time
@@ -88,8 +88,10 @@ if __name__ == "__main__":
     small = small_benchmark()
     with open(ROOT / "results" / "ch05_small.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=small[0].keys())
-        w.writeheader(); w.writerows(small)
+        w.writeheader()
+        w.writerows(small)
     large = large_benchmark()
     with open(ROOT / "results" / "ch05_large.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=large[0].keys())
-        w.writeheader(); w.writerows(large)
+        w.writeheader()
+        w.writerows(large)

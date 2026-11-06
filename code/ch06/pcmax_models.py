@@ -1,4 +1,4 @@
-"""Chapter 6 -- exact models for P || Cmax: MILP and CP-SAT."""
+"""Chapter 6: exact models for P || Cmax: MILP and CP-SAT."""
 import time
 
 import pulp                                  # import before ortools

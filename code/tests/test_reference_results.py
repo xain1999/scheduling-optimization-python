@@ -1,6 +1,6 @@
 """Independent validation of the stored solutions shown in the book.
 
-The case-study scripts check the solver status; these tests check the
+The case-study scripts check the solver status.  These tests check the
 solutions themselves against the rules of each problem, with code that
 does not share anything with the models (only the input data).
 Run:  python tests/test_reference_results.py   (from the code/ folder)
@@ -20,7 +20,7 @@ from schedlib.results import load  # noqa: E402
 
 
 def no_overlap(intervals):
-    """intervals: list of (start, end); True if none overlap."""
+    """intervals: list of (start, end).  True if none overlap."""
     s = sorted(intervals)
     return all(a[1] <= b[0] for a, b in zip(s, s[1:]))
 

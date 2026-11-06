@@ -1,4 +1,4 @@
-"""Chapter 12 -- appointments with time windows and a lunch break."""
+"""Chapter 12: appointments with time windows and a lunch break."""
 import sys
 from pathlib import Path
 

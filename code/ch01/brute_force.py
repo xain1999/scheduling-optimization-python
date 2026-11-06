@@ -1,4 +1,4 @@
-"""Chapter 1 -- exhaustive search, and why it does not scale."""
+"""Chapter 1: exhaustive search, and why it does not scale."""
 import itertools
 import math
 import random

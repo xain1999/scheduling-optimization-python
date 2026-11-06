@@ -1,4 +1,4 @@
-# Scheduling Optimization with Python — companion code
+# Scheduling Optimization with Python: companion code
 
 Tested code for the book **Scheduling Optimization with Python: From
 Dispatching Rules to Constraint Programming, Mathematical Optimization,
@@ -170,5 +170,5 @@ through the repository's issue tracker.
 The code is released under the MIT License (see [LICENSE](LICENSE)).
 
 The job-shop instances in `code/data/jobshop/` are public benchmarks
-from the literature. They were taken from the JSPLIB collection; see the
+from the literature. They were taken from the JSPLIB collection. See the
 README in that folder for their original sources.

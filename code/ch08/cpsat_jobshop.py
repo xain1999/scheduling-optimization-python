@@ -1,4 +1,4 @@
-"""Chapter 8 -- the classic CP-SAT job-shop model."""
+"""Chapter 8: the classic CP-SAT job-shop model."""
 import sys
 import time
 from pathlib import Path

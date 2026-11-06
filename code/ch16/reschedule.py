@@ -1,4 +1,4 @@
-"""Chapter 16 -- a machine breaks down: repair or re-optimise?"""
+"""Chapter 16: a machine breaks down: repair or re-optimise?"""
 import json
 import sys
 from pathlib import Path
@@ -17,8 +17,9 @@ RESULTS = Path(__file__).resolve().parents[2] / "results"
 
 # [start:rightshift]
 def right_shift(jobs, starts, machine, t_down, t_up):
-    """Keep every sequence; push operations later only as far as
-    needed.  Operations on `machine` cannot run in [t_down, t_up); an
+    """Keep every sequence and push operations later only as far as
+    needed.  Operations on `machine` cannot run in [t_down, t_up)
+    an
     interrupted operation restarts from scratch after the repair."""
     order = sorted(starts, key=lambda op: starts[op])
     new, job_end, mach_end = {}, {}, {}

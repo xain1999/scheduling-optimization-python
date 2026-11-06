@@ -1,4 +1,4 @@
-"""Chapter 15 -- large neighbourhood search around CP-SAT (job shop)."""
+"""Chapter 15: large neighbourhood search around CP-SAT (job shop)."""
 import random
 import sys
 import time
@@ -24,9 +24,9 @@ def makespan_of(jobs, starts):
 
 # [start:repair]
 def reoptimise(jobs, starts, free_jobs, seconds, workers=8):
-    """Keep the machine order of all operations of the *other* jobs;
-    let the operations of `free_jobs` move anywhere.  Minimise makespan
-    starting from the current schedule as a hint."""
+    """Keep the machine order of all operations of the *other* jobs,
+    and let the operations of `free_jobs` move anywhere. Minimise
+    makespan, starting from the current schedule as a hint."""
     H = sum(d for ops in jobs for _, d in ops)
     m = cp_model.CpModel()
     s, e, per_machine = {}, {}, {}

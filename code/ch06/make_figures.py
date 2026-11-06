@@ -1,4 +1,4 @@
-"""Chapter 6 -- figures."""
+"""Chapter 6: figures."""
 import sys
 from pathlib import Path
 

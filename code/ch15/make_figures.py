@@ -1,4 +1,4 @@
-"""Chapter 15 -- LNS convergence (from results/ch15_lns.json)."""
+"""Chapter 15: LNS convergence (from results/ch15_lns.json)."""
 import json
 import sys
 from pathlib import Path
@@ -19,7 +19,8 @@ ax.axhline(data["direct"], color="#555", ls="--", lw=1,
            label="one CP-SAT run, 60 s")
 ax.axhline(data["bound"], color="#999", ls=":", lw=1,
            label="CP-SAT lower bound")
-ax.set_xlabel("seconds"); ax.set_ylabel("makespan")
+ax.set_xlabel("seconds")
+ax.set_ylabel("makespan")
 ax.legend(frameon=False, fontsize=8)
 ax.spines[["top", "right"]].set_visible(False)
 fig.tight_layout()

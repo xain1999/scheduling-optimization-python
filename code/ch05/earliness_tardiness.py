@@ -1,4 +1,4 @@
-"""Chapter 5 -- just-in-time: penalise earliness as well as tardiness."""
+"""Chapter 5: just-in-time: penalise earliness as well as tardiness."""
 import random
 import sys
 from pathlib import Path
@@ -24,7 +24,7 @@ def jit_instance(n=10, seed=3):
 # [start:model]
 def solve_et(jobs, alpha=1, idle_allowed=True, time_limit=20):
     """min sum alpha*w_j*E_j + w_j*T_j.  alpha weights earliness
-    (holding cost); w_j weights tardiness (lateness penalty)."""
+    (holding cost), and w_j weights tardiness (lateness penalty)."""
     H = max(j.d for j in jobs) + sum(j.p for j in jobs)
     m = cp_model.CpModel()
     start, end, ivs, cost = {}, {}, [], []

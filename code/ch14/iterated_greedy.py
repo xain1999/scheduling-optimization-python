@@ -1,4 +1,4 @@
-"""Chapter 14 -- iterated greedy for the permutation flow shop."""
+"""Chapter 14: iterated greedy for the permutation flow shop."""
 import math
 import random
 import sys

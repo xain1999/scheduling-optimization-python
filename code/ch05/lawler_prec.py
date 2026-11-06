@@ -1,4 +1,4 @@
-"""Chapter 5 -- Lawler's algorithm for 1 | prec | Lmax (and any f_max)."""
+"""Chapter 5: Lawler's algorithm for 1 | prec | Lmax (and any f_max)."""
 import sys
 from pathlib import Path
 

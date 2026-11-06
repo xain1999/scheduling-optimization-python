@@ -1,4 +1,4 @@
-"""Chapter 13 -- ATCS: the ATC rule extended to sequence-dependent setups."""
+"""Chapter 13: ATCS: the ATC rule extended to sequence-dependent setups."""
 import math
 import sys
 from pathlib import Path

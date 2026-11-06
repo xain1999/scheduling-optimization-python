@@ -1,4 +1,4 @@
-"""Chapter 4 -- a shared crew: the Cumulative constraint."""
+"""Chapter 4: a shared crew: the Cumulative constraint."""
 import sys
 from pathlib import Path
 
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     # [start:run]
     plan, makespan = solve_crew()
     total = sum(d * n for d, n in TASKS.values())
-    print(f"makespan {makespan} h; lower bound from workload: "
+    print(f"makespan {makespan} h, lower bound from workload: "
           f"{total}/{CREW} = {total / CREW:.1f} h")
     for t, (s, e) in sorted(plan.items(), key=lambda kv: kv[1]):
         print(f"  {t:4} {s:2}-{e:2}  people={TASKS[t][1]}")

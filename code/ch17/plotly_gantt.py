@@ -1,4 +1,4 @@
-"""Chapter 17 -- an interactive Gantt chart with Plotly."""
+"""Chapter 17: an interactive Gantt chart with Plotly."""
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path

@@ -1,4 +1,4 @@
-"""Chapter 9 -- multiple modes and the time-cost trade-off."""
+"""Chapter 9: multiple modes and the time-cost trade-off."""
 from ortools.sat.python import cp_model
 
 from renovation import CREWS, PROJECT
@@ -54,7 +54,7 @@ def cheapest_plan(deadline, time_limit=20):
     status = solver.status_name(solver.solve(m))
     if status in ("OPTIMAL", "FEASIBLE"):
         return status, int(solver.objective_value)
-    return status, None     # INFEASIBLE: proven; UNKNOWN: out of time
+    return status, None     # INFEASIBLE: proven, UNKNOWN: out of time
 # [end:model]
 
 

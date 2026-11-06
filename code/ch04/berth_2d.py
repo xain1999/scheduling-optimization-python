@@ -1,4 +1,4 @@
-"""Chapter 4 -- berth allocation: intervals in time *and* space."""
+"""Chapter 4: berth allocation: intervals in time *and* space."""
 import random
 import sys
 from pathlib import Path

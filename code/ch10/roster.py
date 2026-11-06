@@ -1,4 +1,4 @@
-"""Chapter 10 -- nurse rostering with CP-SAT."""
+"""Chapter 10: nurse rostering with CP-SAT."""
 import random
 import sys
 from pathlib import Path
@@ -138,9 +138,9 @@ def explain_infeasibility(requests, **kw):
     """Which groups of rules cannot all hold together?
 
     Returns (status, conflict).  The conflict is a list of group
-    names, only after a proven INFEASIBLE; FEASIBLE/OPTIMAL means the
+    names, only after a proven INFEASIBLE.  FEASIBLE/OPTIMAL means the
     rules are compatible, and UNKNOWN (time limit) or MODEL_INVALID
-    mean that nothing is known -- never read them as "no conflict".
+    mean that nothing is known, so never read them as "no conflict".
     """
     m, _, groups = build(requests, assumptions=True, soft=False, **kw)
     m.add_assumptions(list(groups.values()))

@@ -1,4 +1,4 @@
-"""Chapter 7 -- permutation flow shop basics: data, makespan, Johnson."""
+"""Chapter 7: permutation flow shop basics: data, makespan, Johnson."""
 import itertools
 import random
 
@@ -7,7 +7,7 @@ import random
 def taillard_instance(seed: int, n: int, m: int) -> list[list[int]]:
     """Taillard's (1993) generator: p[i][j] for machine i, job j.
 
-    A Lehmer random number generator; with the published seeds it
+    A Lehmer random number generator.  With the published seeds it
     reproduces the benchmark instances exactly (ta001 uses seed
     873654221 with n=20 jobs and m=5 machines).
     """
@@ -46,7 +46,7 @@ def johnson(p: list[list[int]]) -> list[int]:
     """Johnson's rule, optimal for F2 || Cmax.
 
     Jobs faster on machine 1 than on machine 2 go first, by increasing
-    time on machine 1; the others go last, by decreasing time on
+    time on machine 1.  The others go last, by decreasing time on
     machine 2.
     """
     n = len(p[0])

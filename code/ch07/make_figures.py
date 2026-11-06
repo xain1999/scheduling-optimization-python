@@ -1,4 +1,4 @@
-"""Chapter 7 -- figure: a permutation flow-shop schedule."""
+"""Chapter 7: figure: a permutation flow-shop schedule."""
 import sys
 from pathlib import Path
 

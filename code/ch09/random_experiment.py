@@ -1,4 +1,4 @@
-"""Chapter 9 -- CPM, serial SGS and CP-SAT on random projects."""
+"""Chapter 9: CPM, serial SGS and CP-SAT on random projects."""
 import csv
 from pathlib import Path
 
@@ -27,4 +27,5 @@ for n in (30, 60):
 
 with open(ROOT / "results" / "ch09_random.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=rows[0].keys())
-    w.writeheader(); w.writerows(rows)
+    w.writeheader()
+    w.writerows(rows)

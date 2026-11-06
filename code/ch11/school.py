@@ -1,4 +1,4 @@
-"""Chapter 11 -- a school timetable, and repairing it after a change."""
+"""Chapter 11: a school timetable, and repairing it after a change."""
 from ortools.sat.python import cp_model
 
 # [start:data]

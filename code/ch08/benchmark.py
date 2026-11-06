@@ -1,4 +1,4 @@
-"""Chapter 8 -- priority rules, MILP and CP-SAT on classic benchmarks."""
+"""Chapter 8: priority rules, MILP and CP-SAT on classic benchmarks."""
 import csv
 from pathlib import Path
 
@@ -33,4 +33,5 @@ for name in NAMES:
 (ROOT / "results").mkdir(exist_ok=True)
 with open(ROOT / "results" / "ch08_bench.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=rows[0].keys())
-    w.writeheader(); w.writerows(rows)
+    w.writeheader()
+    w.writerows(rows)

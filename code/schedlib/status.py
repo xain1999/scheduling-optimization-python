@@ -11,13 +11,13 @@ class NoSolution(RuntimeError):
 
     The message is the solver's status: INFEASIBLE (proven: none exists),
     MODEL_INVALID (a bug in the model), or UNKNOWN (the time limit was
-    reached before any solution was found -- nothing is proven).
+    reached before any solution was found, so nothing is proven).
     """
 
 
 # [start:check]
 def check_cpsat(solver, status) -> str:
-    """Return the status name; raise NoSolution if there is none."""
+    """Return the status name, or raise NoSolution if there is none."""
     from ortools.sat.python import cp_model
     name = solver.status_name(status)
     if status not in (cp_model.OPTIMAL, cp_model.FEASIBLE):

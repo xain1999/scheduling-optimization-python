@@ -1,4 +1,4 @@
-"""Chapter 2 -- model size and LP-relaxation strength of the two MILPs."""
+"""Chapter 2: model size and LP-relaxation strength of the two MILPs."""
 import sys
 from pathlib import Path
 

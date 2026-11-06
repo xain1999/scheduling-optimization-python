@@ -1,4 +1,4 @@
-"""schedlib -- small helper library for 'Scheduling Optimization with Python'."""
+"""schedlib: small helper library for 'Scheduling Optimization with Python'."""
 from .diagnostics import apply_environment as _apply_environment
 from .core import (InvalidSchedule, Job, SolveResult, Task, check_jobs,
                    completion_times, evaluate, sequence_to_schedule,

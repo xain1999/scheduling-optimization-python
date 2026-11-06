@@ -15,7 +15,7 @@ RESULTS = Path(__file__).resolve().parents[2] / "results"
 
 
 def save(name, data, overwrite=False):
-    """Write `data` (JSON-compatible; Task lists allowed) to results/.
+    """Write `data` (JSON-compatible, Task lists allowed) to results/.
 
     An existing file is kept unless overwrite=True: it is the reference
     solution shown in the book, and the figures are drawn from it.

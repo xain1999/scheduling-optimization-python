@@ -1,4 +1,4 @@
-"""Chapter 17 -- testing the engine: examples, properties, the API."""
+"""Chapter 17: testing the engine: examples, properties, the API."""
 import sys
 from pathlib import Path
 

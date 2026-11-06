@@ -1,4 +1,4 @@
-"""Chapter 14 -- a genetic algorithm for the permutation flow shop."""
+"""Chapter 14: a genetic algorithm for the permutation flow shop."""
 import random
 import sys
 import time

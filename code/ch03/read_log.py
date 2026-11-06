@@ -1,4 +1,4 @@
-"""Chapter 3 -- watch HiGHS work: print the solver log of a MILP."""
+"""Chapter 3: watch HiGHS work: print the solver log of a MILP."""
 import sys
 from pathlib import Path
 

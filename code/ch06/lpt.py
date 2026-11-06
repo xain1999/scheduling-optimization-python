@@ -1,4 +1,4 @@
-"""Chapter 6 -- list scheduling and LPT for P || Cmax."""
+"""Chapter 6: list scheduling and LPT for P || Cmax."""
 import heapq
 
 

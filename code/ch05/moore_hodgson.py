@@ -1,4 +1,4 @@
-"""Chapter 5 -- Moore-Hodgson: minimise the number of late jobs."""
+"""Chapter 5: Moore-Hodgson: minimise the number of late jobs."""
 import itertools
 import random
 import sys
@@ -14,7 +14,7 @@ def moore_hodgson(jobs: list[Job]) -> list[str]:
     """Optimal order for 1 || sum U_j.
 
     Go through the jobs in EDD order.  Whenever the current job would
-    be late, throw out the longest job scheduled so far; thrown-out
+    be late, throw out the longest job scheduled so far.  Thrown-out
     jobs are late anyway, so they go at the end in any order.
     """
     on_time, t, late = [], 0, []

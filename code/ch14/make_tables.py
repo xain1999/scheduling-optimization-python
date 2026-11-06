@@ -1,4 +1,4 @@
-"""Chapter 14 -- tables from the experiment CSVs."""
+"""Chapter 14: tables from the experiment CSVs."""
 import csv
 from pathlib import Path
 

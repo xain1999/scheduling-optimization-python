@@ -1,4 +1,4 @@
-"""Chapter 5 -- CP-SAT on 40 jobs, with and without an ATC warm start."""
+"""Chapter 5: CP-SAT on 40 jobs, with and without an ATC warm start."""
 import csv
 import sys
 from pathlib import Path
@@ -43,4 +43,5 @@ for tf in (0.4, 0.6, 0.8):
         print(rows[-1], flush=True)
 with open(ROOT / "results" / "ch05_large_hint.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=rows[0].keys())
-    w.writeheader(); w.writerows(rows)
+    w.writeheader()
+    w.writerows(rows)

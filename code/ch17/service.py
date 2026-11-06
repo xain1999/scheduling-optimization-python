@@ -1,4 +1,4 @@
-"""Chapter 17 -- a scheduling engine behind a web API (FastAPI)."""
+"""Chapter 17: a scheduling engine behind a web API (FastAPI)."""
 import sys
 from pathlib import Path
 

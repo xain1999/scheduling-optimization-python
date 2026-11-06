@@ -1,4 +1,4 @@
-"""Chapter 3 -- a two-variable LP: the print shop's weekly product mix."""
+"""Chapter 3: a two-variable LP: the print shop's weekly product mix."""
 import sys
 from pathlib import Path
 

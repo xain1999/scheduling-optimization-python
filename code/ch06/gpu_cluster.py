@@ -1,4 +1,4 @@
-"""Chapter 6 -- case study: training jobs on a small, mixed GPU cluster."""
+"""Chapter 6: case study: training jobs on a small, mixed GPU cluster."""
 import random
 import sys
 from pathlib import Path
@@ -45,7 +45,7 @@ def duration(job, gpu):
 
 # [start:greedy]
 def greedy(jobs):
-    """FIFO by submit time; each job goes where it finishes first."""
+    """FIFO by submit time.  Each job goes where it finishes first."""
     free = {g: 0 for g in GPUS}
     plan = []
     for job in sorted(jobs, key=lambda j: j["release"]):

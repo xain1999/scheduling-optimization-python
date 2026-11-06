@@ -1,4 +1,4 @@
-"""Chapter 8 -- benchmark table."""
+"""Chapter 8: benchmark table."""
 import csv
 from pathlib import Path
 

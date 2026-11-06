@@ -1,4 +1,4 @@
-"""Chapter 3 -- capacitated lot sizing: three formulations of one model."""
+"""Chapter 3: capacitated lot sizing: three formulations of one model."""
 import random
 import sys
 import time

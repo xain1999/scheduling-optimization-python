@@ -1,4 +1,4 @@
-"""Chapter 17 -- architecture diagram of a scheduling system."""
+"""Chapter 17: architecture diagram of a scheduling system."""
 import sys
 from pathlib import Path
 
@@ -50,7 +50,8 @@ for label, (x, y, c) in BOXES.items():
 names = list(BOXES)
 for a, b in zip(names, names[1:]):
     arrow(ax, a, b)
-ax.set_xlim(-0.05, 6.45); ax.set_ylim(0.8, 3.2)
+ax.set_xlim(-0.05, 6.45)
+ax.set_ylim(0.8, 3.2)
 ax.axis("off")
 fig.tight_layout()
 fig.savefig(OUT / "ch17_architecture.pdf", bbox_inches="tight")

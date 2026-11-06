@@ -1,4 +1,4 @@
-"""Chapter 2 -- extending the CP-SAT model to parallel machines."""
+"""Chapter 2: extending the CP-SAT model to parallel machines."""
 import sys
 from pathlib import Path
 
@@ -16,7 +16,7 @@ from schedlib.status import check_cpsat
 # [start:model]
 def solve_parallel(jobs: list[Job], machines: list[str],
                    time_limit: float = 30, workers: int = 8):
-    """P | r_j | sum w_j T_j  -- identical parallel machines."""
+    """P | r_j | sum w_j T_j: identical parallel machines."""
     H = horizon(jobs)
     model = cp_model.CpModel()
     start, end, tardy = {}, {}, {}

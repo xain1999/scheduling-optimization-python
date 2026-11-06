@@ -1,4 +1,4 @@
-"""Chapter 7 -- the NEH heuristic for permutation flow shops."""
+"""Chapter 7: the NEH heuristic for permutation flow shops."""
 from flowshop import makespan
 
 

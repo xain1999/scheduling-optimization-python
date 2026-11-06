@@ -1,4 +1,4 @@
-"""Chapter 5 -- weighted-tardiness instances in the classic style."""
+"""Chapter 5: weighted-tardiness instances in the classic style."""
 import random
 import sys
 from pathlib import Path
@@ -14,7 +14,7 @@ def wt_instance(n: int, tf: float, rdd: float, seed: int) -> list[Job]:
 
     p_j ~ U[1, 100], w_j ~ U[1, 10] and due dates
     d_j ~ U[P(1 - TF - RDD/2), P(1 - TF + RDD/2)] with P = sum of p_j.
-    TF (tardiness factor) controls how many jobs are late; RDD (range
+    TF (tardiness factor) controls how many jobs are late.  RDD (range
     of due dates) controls how spread out the due dates are.
     """
     rng = random.Random(seed)

@@ -1,4 +1,4 @@
-"""Chapter 1 -- compare simple dispatching rules on one machine."""
+"""Chapter 1: compare simple dispatching rules on one machine."""
 import sys
 from pathlib import Path
 
@@ -14,7 +14,7 @@ RULES = {
     "SPT":  lambda j: j.p,             # shortest processing time
     "LPT":  lambda j: -j.p,            # longest processing time
     "EDD":  lambda j: j.d,             # earliest due date
-    "WSPT": lambda j: (j.p / j.w if j.w > 0  # weighted SPT;
+    "WSPT": lambda j: (j.p / j.w if j.w > 0  # weighted SPT,
                        else float("inf")),   # weight 0 goes last
 }
 

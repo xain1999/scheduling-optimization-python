@@ -1,4 +1,4 @@
-"""Chapter 7 -- NEH and CP-SAT on Taillard-style flow-shop instances."""
+"""Chapter 7: NEH and CP-SAT on Taillard-style flow-shop instances."""
 import csv
 from pathlib import Path
 
@@ -28,4 +28,5 @@ for name, seed, n, m in INSTANCES:
 
 with open(ROOT / "results" / "ch07_bench.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=rows[0].keys())
-    w.writeheader(); w.writerows(rows)
+    w.writeheader()
+    w.writerows(rows)

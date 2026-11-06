@@ -1,4 +1,4 @@
-"""Chapter 15 -- rolling horizon for a long stream of jobs."""
+"""Chapter 15: rolling horizon for a long stream of jobs."""
 import math
 import sys
 import time

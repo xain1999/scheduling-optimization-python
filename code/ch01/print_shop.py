@@ -1,4 +1,4 @@
-"""Chapter 1 -- the Inkwell print shop instance."""
+"""Chapter 1: the Inkwell print shop instance."""
 import sys
 from pathlib import Path
 
@@ -7,8 +7,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from schedlib import Job
 
 # [start:instance]
-# Eight print jobs waiting at 8:00. Times are in hours of press time;
-# due dates are hours from now; weight = how much the customer matters.
+# Eight print jobs waiting at 8:00. Times are hours of press time.
+# Due dates are hours from now. Weight = how much the customer matters.
 JOBS = [
     Job("J1", p=4, d=10, w=3),
     Job("J2", p=7, d=17, w=1),

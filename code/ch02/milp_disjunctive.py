@@ -1,4 +1,4 @@
-"""Chapter 2 -- MILP model 1: start times + disjunctive (big-M) ordering."""
+"""Chapter 2: MILP model 1: start times + disjunctive (big-M) ordering."""
 import sys
 import time
 from itertools import combinations

@@ -1,4 +1,4 @@
-"""Chapter 12 -- map of the field-service routes."""
+"""Chapter 12: map of the field-service routes."""
 import sys
 from pathlib import Path
 
@@ -59,9 +59,11 @@ for j in jobs:
 ax.plot(*DEPOT, "s", color="black", ms=7)
 ax.legend(fontsize=8, frameon=False, loc="lower left",
           bbox_to_anchor=(0, 1.0), ncol=4)
-ax.set_xlim(LO, HI); ax.set_ylim(LO, HI)
+ax.set_xlim(LO, HI)
+ax.set_ylim(LO, HI)
 ax.set_aspect("equal")
-ax.set_xticks([]); ax.set_yticks([])
+ax.set_xticks([])
+ax.set_yticks([])
 fig.tight_layout()
 fig.savefig(OUT / "ch12_routes.pdf", bbox_inches="tight")
 print(routes, skipped)

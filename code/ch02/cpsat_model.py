@@ -1,4 +1,4 @@
-"""Chapter 2 -- the same problem as a constraint programming model (CP-SAT)."""
+"""Chapter 2: the same problem as a constraint programming model (CP-SAT)."""
 import sys
 import time
 from pathlib import Path
@@ -26,7 +26,7 @@ def build_cpsat(jobs: list[Job]):
         # An interval variable ties start, duration and end together
         intervals.append(model.new_interval_var(
             start[j.id], j.p, end[j.id], f"job_{j.id}"))
-        # tardy = max(0, end - due), stated exactly; it can reach
+        # tardy = max(0, end - due), stated exactly.  It can reach
         # H - d (more than H if the job is already overdue, d < 0)
         tardy[j.id] = model.new_int_var(0, max(0, H - j.d),
                                         f"tardy_{j.id}")

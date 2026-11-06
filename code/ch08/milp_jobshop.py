@@ -1,4 +1,4 @@
-"""Chapter 8 -- the disjunctive MILP for the job shop (for comparison)."""
+"""Chapter 8: the disjunctive MILP for the job shop (for comparison)."""
 import time
 from itertools import combinations
 

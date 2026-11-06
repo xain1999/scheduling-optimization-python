@@ -1,4 +1,4 @@
-"""Chapter 13 -- making NEH fast: Taillard's acceleration with NumPy."""
+"""Chapter 13: making NEH fast: Taillard's acceleration with NumPy."""
 import sys
 import time
 from pathlib import Path
@@ -15,7 +15,7 @@ from neh import neh
 def neh_fast(p):
     """NEH where all insertion positions of a job are evaluated at
     once.  e[i, k]: earliest completion of the k-th job of the partial
-    sequence on machine i (heads);  q[i, k]: tail from k to the end.
+    sequence on machine i (heads).  q[i, k]: tail from k to the end.
     Inserting job j at position k gives makespan
     max_i (f[i,k] + q[i,k])
     where f is the completion of j itself placed after position k-1.
@@ -51,8 +51,11 @@ if __name__ == "__main__":
     # [start:run]
     for n, m in [(20, 5), (50, 10), (100, 20), (200, 20)]:
         p = taillard_instance(12345 + n, n, m)
-        t0 = time.perf_counter(); s1 = neh(p); t1 = time.perf_counter()
-        s2 = neh_fast(p); t2 = time.perf_counter()
+        t0 = time.perf_counter()
+        s1 = neh(p)
+        t1 = time.perf_counter()
+        s2 = neh_fast(p)
+        t2 = time.perf_counter()
         print(f"{n:3}x{m:<2}  naive {t1 - t0:6.2f} s  "
               f"fast {t2 - t1:5.2f} s  "
               f"makespans {makespan(p, s1)} / {makespan(p, s2)}")

@@ -1,4 +1,4 @@
-"""Chapter 16 -- distribution of simulated weighted tardiness."""
+"""Chapter 16: distribution of simulated weighted tardiness."""
 import random
 import sys
 from pathlib import Path

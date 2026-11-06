@@ -1,4 +1,4 @@
-"""Chapter 9 -- the RCPSP: CP-SAT model, serial SGS, random projects."""
+"""Chapter 9: the RCPSP: CP-SAT model, serial SGS, random projects."""
 import random
 import sys
 import time
@@ -120,7 +120,7 @@ def serial_sgs(project, capacity, priority):
 def random_project(n=30, resources=4, seed=0, strength=0.3):
     """A random project in the spirit of the PSPLIB generator.
 
-    Durations 1-10; each activity uses each resource with probability
+    Durations 1-10.  Each activity uses each resource with probability
     0.5 (demand 1-10).  Capacities follow the PSPLIB "resource
     strength" RS: R = rmin + RS * (rmax - rmin), where rmin is the
     largest single

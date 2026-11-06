@@ -1,4 +1,4 @@
-"""Chapter 5 -- exact dynamic programming over subsets for 1||sum wT."""
+"""Chapter 5: exact dynamic programming over subsets for 1||sum wT."""
 import sys
 import time
 from pathlib import Path

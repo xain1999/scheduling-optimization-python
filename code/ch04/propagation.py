@@ -1,4 +1,4 @@
-"""Chapter 4 -- constraint propagation by hand on a precedence network."""
+"""Chapter 4: constraint propagation by hand on a precedence network."""
 
 # [start:propagate]
 def propagate(tasks, precedences, release, deadline):

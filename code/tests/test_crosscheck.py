@@ -1,10 +1,10 @@
 """Cross-checks: every exact method against brute force on small random
 instances, and every heuristic against the rules of its problem.
 
-These tests do not look at the book's numbers; they check that the
+These tests do not look at the book's numbers.  They check that the
 algorithms are right on inputs nobody chose by hand (random releases,
 zero weights, negative due dates, zero-duration project activities).
-Run:  python tests/test_crosscheck.py   (from the code/ folder; ~2 min)
+Run:  python tests/test_crosscheck.py   (from the code/ folder, about 2 min)
 """
 import itertools
 import random

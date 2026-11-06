@@ -1,4 +1,4 @@
-"""Chapter 2 -- MILP model 2: time-indexed formulation."""
+"""Chapter 2: MILP model 2: time-indexed formulation."""
 import sys
 import time
 from pathlib import Path

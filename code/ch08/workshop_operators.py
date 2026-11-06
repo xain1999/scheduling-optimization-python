@@ -1,4 +1,4 @@
-"""Chapter 8 -- case study: a flexible machining workshop with operators.
+"""Chapter 8: case study: a flexible machining workshop with operators.
 
 Each operation can run on one of several machines (with different
 durations) and needs one operator for its whole duration.

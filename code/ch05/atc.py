@@ -1,4 +1,4 @@
-"""Chapter 5 -- the Apparent Tardiness Cost (ATC) dispatching rule."""
+"""Chapter 5: the Apparent Tardiness Cost (ATC) dispatching rule."""
 import math
 import sys
 from pathlib import Path
@@ -17,7 +17,7 @@ def atc_order(jobs: list[Job], k: float = 2.0) -> list[str]:
 
     WSPT for jobs that are already (nearly) late, discounted
     exponentially for jobs whose slack is still large.  k sets how far
-    ahead the rule looks; pbar is the mean processing time.
+    ahead the rule looks, and pbar is the mean processing time.
     Requires k > 0 and every p_j > 0.
     """
     if k <= 0 or any(j.p <= 0 for j in jobs):

@@ -1,4 +1,4 @@
-"""Chapter 8 -- job shop data, reading benchmarks, and critical paths."""
+"""Chapter 8: job shop data, reading benchmarks, and critical paths."""
 import json
 from pathlib import Path
 
@@ -30,7 +30,7 @@ def critical_path(jobs, sequences):
     """Earliest start times and a critical path of the disjunctive
     graph.  sequences[machine] = list of (job, operation index) in
     processing order.  Each operation waits for its job predecessor and
-    its machine predecessor; the makespan is the longest path through
+    its machine predecessor.  The makespan is the longest path through
     this graph.  Raises ValueError if a machine order is incomplete or
     the orders create a cycle (no schedule can follow them).
     """

@@ -90,7 +90,7 @@ def check_jobs(jobs: list[Job]) -> None:
 
     Integer data, unique ids, p > 0, r >= 0, w >= 0.  Due dates may be
     any integer: d < 0 means a job is already overdue at time 0.
-    (Type hints are not checked at run time; this function is.)
+    (Type hints are not checked at run time, but this function is.)
     """
     if len({j.id for j in jobs}) != len(jobs):
         raise ValueError("job ids must be unique")

@@ -1,4 +1,4 @@
-"""Chapter 7 -- permutation, general and no-wait flow shops on ta001."""
+"""Chapter 7: permutation, general and no-wait flow shops on ta001."""
 from cpsat_flowshop import cpsat_flowshop, no_wait_tsp
 from flowshop import taillard_instance
 

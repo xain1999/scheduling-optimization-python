@@ -1,4 +1,4 @@
-"""Chapter 9 -- a house renovation project: data and the critical path."""
+"""Chapter 9: a house renovation project: data and the critical path."""
 
 # [start:data]
 # activity: (duration in days, {crew: people}, [predecessors])
@@ -28,8 +28,8 @@ CREWS = {"carp": 3, "plumb": 1, "elec": 2}       # people available
 
 # [start:cpm]
 def critical_path_method(project):
-    """Forward pass: earliest start (ES); backward pass: latest start
-    (LS) without delaying the project; slack = LS - ES."""
+    """Forward pass: earliest start (ES).  Backward pass: latest start
+    (LS) without delaying the project.  Slack = LS - ES."""
     order, seen, active = [], set(), set()
 
     def visit(a):                       # topological order (DFS)

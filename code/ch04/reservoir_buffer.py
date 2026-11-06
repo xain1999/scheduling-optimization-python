@@ -1,4 +1,4 @@
-"""Chapter 4 -- a limited buffer between two machines: Reservoir."""
+"""Chapter 4: a limited buffer between two machines: Reservoir."""
 import random
 import sys
 from pathlib import Path
@@ -21,7 +21,7 @@ def solve_line(jobs, buffer_size):
 
     jobs: list of (time on machine A, time on machine B).
     A finished pallet leaves A when there is room for it in the buffer
-    (or B is ready); until then it stays on A and blocks it.  It leaves
+    (or B is ready). Until then it stays on A and blocks it.  It leaves
     the buffer when B starts it.
     """
     H = sum(a + b for a, b in jobs)

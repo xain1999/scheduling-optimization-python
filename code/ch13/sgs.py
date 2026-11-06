@@ -1,4 +1,4 @@
-"""Chapter 13 -- serial and parallel schedule generation schemes."""
+"""Chapter 13: serial and parallel schedule generation schemes."""
 import random
 import sys
 from pathlib import Path
@@ -53,8 +53,8 @@ def parallel_sgs(project, capacity, priority):
 
 # [start:rules]
 def priority_rules(project):
-    """LFT: latest finish time (backward pass, ignoring crews);
-    MTS: most total successors;
+    """LFT: latest finish time (backward pass, ignoring crews).
+    MTS: most total successors.
     GRPW: greatest rank positional weight."""
     succ = {a: [b for b in project if a in project[b][2]]
             for a in project}

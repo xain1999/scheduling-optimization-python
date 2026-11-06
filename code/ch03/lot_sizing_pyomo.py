@@ -1,4 +1,4 @@
-"""Chapter 3 -- the 'tight' lot-sizing model written in Pyomo."""
+"""Chapter 3: the 'tight' lot-sizing model written in Pyomo."""
 import sys
 from pathlib import Path
 

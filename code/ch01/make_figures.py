@@ -1,4 +1,4 @@
-"""Chapter 1 -- generate the figures used in the text."""
+"""Chapter 1: generate the figures used in the text."""
 import sys
 from pathlib import Path
 

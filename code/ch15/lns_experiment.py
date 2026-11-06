@@ -1,4 +1,4 @@
-"""Chapter 15 -- LNS versus one big CP-SAT run on a 50 x 15 job shop."""
+"""Chapter 15: LNS versus one big CP-SAT run on a 50 x 15 job shop."""
 import json
 import sys
 from pathlib import Path

@@ -1,4 +1,4 @@
-"""Chapter 14 -- NEH, iterated greedy and a GA on flow-shop instances."""
+"""Chapter 14: NEH, iterated greedy and a GA on flow-shop instances."""
 import csv
 import statistics
 import sys
@@ -31,4 +31,5 @@ for name, seed, n, m in CASES:
     print(rows[-1], flush=True)
 with open(ROOT / "results" / "ch14_flow.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=rows[0].keys())
-    w.writeheader(); w.writerows(rows)
+    w.writeheader()
+    w.writerows(rows)

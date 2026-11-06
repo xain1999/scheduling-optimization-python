@@ -1,4 +1,4 @@
-"""Chapter 14 -- descent, annealing and tabu: 40-job weighted tardiness."""
+"""Chapter 14: descent, annealing and tabu: 40-job weighted tardiness."""
 import csv
 import statistics
 import sys
@@ -37,4 +37,5 @@ for tf in ("0.4", "0.6", "0.8"):
 # [end:experiment]
 with open(ROOT / "results" / "ch14_wt.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=rows[0].keys())
-    w.writeheader(); w.writerows(rows)
+    w.writeheader()
+    w.writerows(rows)

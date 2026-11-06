@@ -1,4 +1,4 @@
-"""Chapter 5 -- turn benchmark CSVs into the table and figure."""
+"""Chapter 5: turn benchmark CSVs into the table and figure."""
 import csv
 import statistics
 import sys

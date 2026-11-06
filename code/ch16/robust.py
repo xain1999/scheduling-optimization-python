@@ -1,4 +1,4 @@
-"""Chapter 16 -- schedules that survive uncertain durations."""
+"""Chapter 16: schedules that survive uncertain durations."""
 import math
 import random
 import statistics
@@ -27,7 +27,7 @@ def instance(n=10, seed=8):
 
 def uncertainty(jobs, seed=8):
     """Coefficient of variation per job: most jobs are routine (0.1),
-    each job is risky (0.6) with probability 1/3 -- new customers, new materials."""
+    each job is risky (0.6) with probability 1/3: new customers, new materials."""
     rng = random.Random(seed)
     return {j.id: 0.6 if rng.random() < 1 / 3 else 0.1 for j in jobs}
 
@@ -46,7 +46,7 @@ def sample_durations(jobs, rng, cv):
 
 def simulate(jobs, order, scenarios):
     """Execute a fixed sequence in each scenario (jobs start as soon
-    as the previous one ends); return each weighted tardiness."""
+    as the previous one ends).  Return each weighted tardiness."""
     by_id = {j.id: j for j in jobs}
     results = []
     for durations in scenarios:

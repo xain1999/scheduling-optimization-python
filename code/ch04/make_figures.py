@@ -1,4 +1,4 @@
-"""Chapter 4 -- figures."""
+"""Chapter 4: figures."""
 import sys
 from pathlib import Path
 
@@ -40,14 +40,16 @@ def crew_figure():
             r = len(rows) - 1
         tasks.append(Task(f"{t}({TASKS[t][1]})", f"row {r + 1}", s, e))
     plot_gantt(tasks, ax=ax1)
-    ax1.set_yticks([]); ax1.set_xlabel("")
+    ax1.set_yticks([])
+    ax1.set_xlabel("")
     ax1.set_title("tasks (people needed)", loc="left", fontsize=8.5)
     usage = [sum(TASKS[t][1] for t, (s, e) in plan.items() if s <= u < e)
              for u in range(makespan)]
     ax2.bar(range(makespan), usage, width=1.0, align="edge",
             color="#BFBFBF", edgecolor="#333", lw=0.5)
     ax2.axhline(CREW, color="black", lw=0.9, ls="--")
-    ax2.set_ylabel("people"); ax2.set_xlabel("time (hours)")
+    ax2.set_ylabel("people")
+    ax2.set_xlabel("time (hours)")
     ax2.set_ylim(0, CREW + 0.6)
     ax2.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
@@ -71,8 +73,10 @@ def berth_figure():
         ax.plot([s["arrival"], t], [x + s["length"] / 2] * 2,
                 color="#777", lw=0.6, ls=":")
     horizon = max(plan[s["name"]][0] + s["hours"] for s in fleet)
-    ax.set_xlim(0, horizon + 1); ax.set_ylim(0, QUAY)
-    ax.set_xlabel("time (hours)"); ax.set_ylabel("quay position")
+    ax.set_xlim(0, horizon + 1)
+    ax.set_ylim(0, QUAY)
+    ax.set_xlabel("time (hours)")
+    ax.set_ylabel("quay position")
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
     fig.savefig(OUT / "ch04_berths.pdf", bbox_inches="tight")

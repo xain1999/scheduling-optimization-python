@@ -1,4 +1,4 @@
-"""Chapter 2 -- instances for 1 | r_j | sum w_j T_j."""
+"""Chapter 2: instances for 1 | r_j | sum w_j T_j."""
 import random
 import sys
 from pathlib import Path
@@ -42,7 +42,7 @@ def random_instance(n: int, seed: int, spread: float = 0.5,
                     slack: float = 0.5) -> list[Job]:
     """Random 1|r_j|sum w_j T_j instance in the style of the literature.
 
-    Releases are spread over `spread` x total work; each due date gives
+    Releases are spread over `spread` x total work. Each due date gives
     the job a random amount of slack after its earliest finish.
     """
     rng = random.Random(seed)
